@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'user_input_statistics'
+require_relative 'test_functions'
 #
 class TestUserInputStatistics < Minitest::Test
   def test_if_number?
