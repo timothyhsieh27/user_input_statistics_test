@@ -7,3 +7,7 @@ end
 def store_number(input, inputs_array)
   inputs_array << input
 end
+
+def count_numbers(inputs_array)
+  inputs_array.count
+end
