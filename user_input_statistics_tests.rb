@@ -27,4 +27,9 @@ class TestUserInputStatistics < Minitest::Test
     assert_equal(6, sum_numbers([1, 2, 3]))
     assert_equal(1, sum_numbers([0, 1]))
   end
+
+  def test_if_averaged?
+    assert_equal(1.0, average_numbers([1, 1, 1]))
+    assert_equal(2.0, average_numbers([1, 3]))
+  end
 end
