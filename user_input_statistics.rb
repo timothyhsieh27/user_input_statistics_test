@@ -9,5 +9,5 @@ def store_number(input, inputs_array)
 end
 
 def count_numbers(inputs_array)
-  inputs_array.count
+  sum = inputs_array.count
 end
