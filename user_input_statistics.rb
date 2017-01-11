@@ -15,3 +15,9 @@ end
 def sum_numbers(inputs_array)
   sum = inputs_array.reduce(:+)
 end
+
+def average_numbers(inputs_array)
+  count = inputs_array.count
+  sum = inputs_array.reduce(:+)
+  average = (sum / count).to_f
+end
