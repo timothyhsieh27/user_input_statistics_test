@@ -17,6 +17,7 @@ def ask_for_number(inputs_array)
 end
 
 def store_number(input, inputs_array)
+  puts 'You put a number.'
   inputs_array << input
   ask_for_number(inputs_array)
 end
@@ -39,6 +40,7 @@ def average_numbers(count, sum, inputs_array)
 end
 
 def calculate_statistics(inputs_array)
+  puts 'Now calculating...'
   count_numbers(inputs_array)
   inputs_array = []
   ask_for_number(inputs_array)
@@ -47,10 +49,8 @@ end
 def check_input(input, inputs_array)
   loop do
     if check_if_number(input)
-      puts 'You put a number.'
       store_number(input, inputs_array)
     elsif check_if_blank(input)
-      puts 'Now calculating...'
       calculate_statistics(inputs_array)
     else
       puts 'That was not a number.'
