@@ -1,7 +1,9 @@
 def check_if_number(input)
-  number_input = input.to_i
-  string_input = number_input.to_s
-  input == string_input
+  float_input = input.to_f
+  integer_input = input.to_i
+  float_string = float_input.to_s
+  integer_string = integer_input.to_s
+  input == float_string || input == integer_string
 end
 
 def check_if_blank(input)
@@ -26,7 +28,7 @@ def count_numbers(inputs_array)
 end
 
 def sum_numbers(count, inputs_array)
-  sum = inputs_array.map(&:to_i).reduce(:+).to_s
+  sum = inputs_array.map(&:to_f).reduce(:+).to_s
   puts "The sum of your number(s) is #{sum}."
   average_numbers(count, sum, inputs_array)
 end
@@ -58,8 +60,8 @@ def check_input(input, inputs_array)
 end
 
 def main
-inputs_array = []
-ask_for_number(inputs_array)
+  inputs_array = []
+  ask_for_number(inputs_array)
 end
 
 main if __FILE__ == $PROGRAM_NAME
