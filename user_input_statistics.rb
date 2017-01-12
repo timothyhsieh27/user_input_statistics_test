@@ -1,8 +1,6 @@
 def check_if_number(input)
-  float_input = input.to_f
-  integer_input = input.to_i
-  float_string = float_input.to_s
-  integer_string = integer_input.to_s
+  float_string = input.to_f.to_s
+  integer_string = input.to_i.to_s
   input == float_string || input == integer_string
 end
 
