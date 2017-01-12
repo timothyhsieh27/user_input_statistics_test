@@ -13,11 +13,11 @@ def count_numbers(inputs_array)
 end
 
 def sum_numbers(inputs_array)
-  sum = inputs_array.reduce(:+)
+  sum = inputs_array.map(&:to_i).reduce(:+).to_s
 end
 
 def average_numbers(inputs_array)
   count = inputs_array.count
-  sum = inputs_array.reduce(:+)
-  average = (sum / count).to_f
+  sum = inputs_array.map(&:to_i).reduce(:+).to_s
+  average = (sum.to_f / count.to_f)
 end
