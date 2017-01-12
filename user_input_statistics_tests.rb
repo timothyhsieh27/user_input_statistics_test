@@ -20,8 +20,8 @@ class TestUserInputStatistics < Minitest::Test
   end
 
   def test_if_numbers_summed?
-    assert_equal(6, sum_numbers([1, 2, 3]))
-    assert_equal(1, sum_numbers([0, 1]))
+    assert_equal('1', sum_numbers(['0', '1']))
+    assert_equal('2', sum_numbers(['1', '1']))
   end
 
   def test_if_averaged?
