@@ -40,6 +40,9 @@ end
 def calculate_statistics(inputs_array)
   puts 'Now calculating...'
   count_numbers(inputs_array)
+end
+
+def reset_array
   inputs_array = []
   ask_for_number(inputs_array)
 end
@@ -50,6 +53,7 @@ def check_input(input, inputs_array)
       store_number(input, inputs_array)
     elsif check_if_blank(input)
       calculate_statistics(inputs_array)
+      reset_array
     else
       puts 'That was not a number.'
       ask_for_number(inputs_array)
